@@ -1,0 +1,54 @@
+body {
+  font-family: "Pretendard", sans-serif;
+  background: linear-gradient(180deg, #f0f7ff, #ffffff);
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #cce6ff;
+  padding: 2rem 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+h1 {
+  margin: 0;
+  color: #004a99;
+}
+
+main {
+  padding: 2rem;
+}
+
+.student-list {
+  list-style: none;
+  padding: 0;
+}
+
+.student-list li {
+  margin: 1rem 0;
+}
+
+.student-list a {
+  text-decoration: none;
+  background: #e0f2ff;
+  padding: 0.7rem 1.2rem;
+  border-radius: 12px;
+  color: #004a99;
+  transition: all 0.2s ease-in-out;
+}
+
+.student-list a:hover {
+  background: #99d1ff;
+  color: white;
+  transform: scale(1.05);
+}
+
+footer {
+  background-color: #cce6ff;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
