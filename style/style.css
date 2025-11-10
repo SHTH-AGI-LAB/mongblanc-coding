@@ -130,3 +130,66 @@ footer {
   border-top: 1px solid #cde5ff;
   margin-top: 3rem;
 }
+
+:root {
+  --bg-gradient: linear-gradient(180deg, #eaf6ff, #ffffff);
+  --main-color: #0077cc;
+  --accent-color: #b3e5ff;
+  --text-color: #003366;
+}
+
+body {
+  background: var(--bg-gradient);
+  color: var(--text-color);
+}
+
+.card {
+  background: white;
+  border: 2px solid var(--accent-color);
+}
+.card:hover {
+  background: var(--accent-color);
+  color: white;
+}
+
+:root {
+  --bg-gradient: linear-gradient(180deg, #fff0f5, #ffffff);
+  --main-color: #e64a8b;
+  --accent-color: #ffb6c1;
+  --text-color: #4a1a3d;
+}
+
+body {
+  background: var(--bg-gradient);
+  color: var(--text-color);
+}
+
+.card {
+  background: white;
+  border: 2px solid var(--accent-color);
+}
+.card:hover {
+  background: var(--main-color);
+  color: white;
+}
+
+:root {
+  --bg-gradient: linear-gradient(180deg, #e8fff5, #ffffff);
+  --main-color: #009688;
+  --accent-color: #a7f0d4;
+  --text-color: #00332b;
+}
+
+body {
+  background: var(--bg-gradient);
+  color: var(--text-color);
+}
+
+.card {
+  background: white;
+  border: 2px solid var(--accent-color);
+}
+.card:hover {
+  background: var(--main-color);
+  color: white;
+}
