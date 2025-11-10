@@ -1,20 +1,78 @@
-:root {
-  --bg-gradient: linear-gradient(180deg, #eaf6ff, #ffffff);
-  --main-color: #0077cc;
-  --accent-color: #b3e5ff;
-  --text-color: #003366;
-}
-
+/* 🌊 몽블랑 블루 테마 v2 */
 body {
-  background: var(--bg-gradient);
-  color: var(--text-color);
+  font-family: "Pretendard", "Noto Sans KR", sans-serif;
+  background: linear-gradient(180deg, #e8f4ff 0%, #ffffff 100%);
+  color: #333;
+  margin: 0;
+  text-align: center;
 }
 
-.card {
-  background: white;
-  border: 2px solid var(--accent-color);
+/* 헤더 */
+header {
+  background: linear-gradient(180deg, #cbe4ff 0%, #d9ecff 100%);
+  padding: 2rem 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-bottom: 2px solid #a3d1ff;
 }
-.card:hover {
-  background: var(--accent-color);
-  color: white;
+
+h1 {
+  color: #005bbb;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin: 0;
+  color: #444;
+}
+
+/* 메인 */
+main {
+  padding: 2rem 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: #0077cc;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* 카드형 버튼 레이아웃 */
+.student-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.student-list a {
+  display: block;
+  text-decoration: none;
+  background-color: #ffffff;
+  padding: 1.2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  color: #004a99;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+.student-list a:hover {
+  background: linear-gradient(180deg, #d4ebff 0%, #b5e0ff 100%);
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  color: #003366;
+}
+
+/* 푸터 */
+footer {
+  margin-top: 3rem;
+  background-color: #e7f4ff;
+  border-top: 1px solid #bcdfff;
+  padding: 1.5rem 0;
+  font-size: 0.9rem;
+  color: #555;
 }
