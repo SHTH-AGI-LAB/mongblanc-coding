@@ -31,3 +31,12 @@
   </footer>
 </body>
 </html>
+<button id="bgBtn">배경 바꾸기</button>
+
+<script>
+  const colors = ["#ffe4e1", "#e0f7fa", "#fff9c4", "#e8f5e9", "#ede7f6"];
+  document.getElementById("bgBtn").addEventListener("click", () => {
+    const random = Math.floor(Math.random() * colors.length);
+    document.body.style.backgroundColor = colors[random];
+  });
+</script>
