@@ -31,3 +31,14 @@
   </footer>
 </body>
 </html>
+<input id="nameInput" placeholder="이름을 입력하세요">
+<button id="helloBtn">인사하기</button>
+<p id="helloMsg"></p>
+
+<script>
+  document.getElementById("helloBtn").addEventListener("click", () => {
+    const name = document.getElementById("nameInput").value.trim();
+    document.getElementById("helloMsg").textContent =
+      name ? `${name}님 환영합니다!` : "이름을 입력해 주세요!";
+  });
+</script>
